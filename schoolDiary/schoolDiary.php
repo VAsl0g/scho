@@ -35,8 +35,11 @@ $gr=$students['id_grup'] ;
                     <b>ФИО:<ins><?= $students['middleName'] ?> <?= $students['firstName'] ?> <?= $students['lastName'] ?> </ins></b><br />
                     <b>Дата рождения: <ins><?= $students['date_of_birth'] ?></ins> </b><br />
                     <b>Номер телефона: <ins><?= $students['phone'] ?> </ins></b><br />
-                    <b>Сведения о родителях: <ins><?= $students['roditinfo'] ?> </ins></b><br />
-
+                    <b>Сведения о родителях: <ins><?= $students['roditinfo'] ?> </ins></b><br /
+            </div>
+            <div class="allClasses">
+                <Br>
+            <a href="processUpdate.php?id=<?= $students['id_stud'] ?>">Редактировать личные данные</a>
             </div>
         </div>
         <hr class="diary">

@@ -75,7 +75,6 @@
                 <tr>
                     <td><input  name="time1" type="time" pattern="^\d{2}-\d{2}$" value="">
                     </td>
-
                     <td>
                         <?php     $post=mysqli_query($connect,'SELECT * from `post`');
                                            echo '<div>
@@ -87,7 +86,6 @@
                             </div>'; 
                             ?>
                     </td>
-                      
                     <td>
                         <?php       $grup=mysqli_query($connect,'SELECT * from `grup`');
                                            echo '<div>

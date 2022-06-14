@@ -364,6 +364,11 @@ input[name="editClass"] {
 #editTeacher {
 	position: absolute; top: 735px; left: 206px;
 }
+
+
+#editPuup {
+	position: absolute; top: 858px; left: 203px;
+}
 #doChoiceOnAddPupilPage {
 	position: absolute; top: 580px; left: 50px;
 	margin: 10px 0 0 -15px;
