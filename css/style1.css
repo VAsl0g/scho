@@ -1,0 +1,63 @@
+p1 {
+    position: absolute;
+    width: 1014px;
+    height: 300px;
+    left: 174px;
+    top: 165px;
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 181.8%;
+    color: #fbfdff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+p2 {
+    position: absolute;
+    width: 439px;
+    height: 69px;
+    left: 197px;
+    top: 374px;
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 181.8%;
+    color: #36738c;
+}
+
+
+p3 {
+    position: absolute;
+    width: 617px;
+    height: 84px;
+    left: 200px;
+    top: 489px;
+    font-family: 'Playfair Display SC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 181.8%;
+    color: #ffffff;
+}
+
+.doChoice a {
+	background: #296487;
+	/* border: 2px solid red; */
+	border-radius: 3px 15px 1px 15px;
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+	display: inline-block;
+	height: 33px;
+	line-height: 30px;
+	margin-left: 189px;
+	margin-top: 497px;
+	margin-bottom: 25px;
+	text-decoration: none;
+	padding: 0px 10px 0 10px;
+}
+
+body {
+    background-image: url("../fon.jpg");
+} 

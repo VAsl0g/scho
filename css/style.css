@@ -1,0 +1,822 @@
+@media (max-width: 999px) {
+	.centerOfDiary {display: none;}
+}
+
+body {
+	background: #c9dbdc;
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+}
+.fonForBody {
+	background: none;
+}
+.formForSchedule {
+	border: 2px solid #0fcaff21;
+	margin-bottom: 20px;
+	width:950px;
+	column-count: 1;
+}
+.schedule, table {
+	border-collapse: collapse;
+}
+.small {
+	/* border: 2px solid red; */
+	width: 20px;
+}
+.schedule {
+	/* border: 2px solid red; */
+	width:400px;
+}
+.oneDay {
+	/* border: 3px solid blue; */
+	margin-left: 25px;
+	width:400px;
+}
+ul li {
+	/* border: 1px solid black; */
+	display: inline;
+	margin-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		страница авторизации		*/
+.authPage {
+	background: linear-gradient(to right, #b1c8d4 0%, #b5c9bc 33%, #73cbd3 66%, #b4c9bc 100%);
+	/* border: 1px solid blue; */
+	margin: 20px auto;
+	padding-bottom: 1px;
+	text-align: center;
+	width: 400px;
+}
+.authPageBottom {
+	background: linear-gradient(to right, #c0e7fb 0%, #dae4ff 33%, #a7bad5 66%, #4293ab 100%);
+	min-height: 30px;
+	margin: -41px auto;
+	width: 400px;
+}
+.authPage h1 {
+	color: #2d343d;
+	padding-top: 20px;
+}
+.formAutorization p {
+	padding-top: 20px;
+}
+.formAutorization input[name="auth"] {
+	background: white;
+	border: none;
+	color: #3f2423;
+	font-weight: bold;
+	height: 25px;
+	margin-bottom: 20px;
+	width: 100px;
+}
+.formAutorization input[name="login"],
+.formAutorization input[name="password"] {
+	border: none;
+	color: #0f0a2b;
+	font-weight: bold;
+	height: 33px;
+	padding-left: 10px;
+	width: 240px;
+}
+.formAutorization {
+	background: #1b4864;
+	/* border: 1px solid blue; */
+	color: white;
+	margin: 70px auto 20px auto;
+	width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		главное меню		*/
+.menu {
+	background: #212e48;
+	/* border: 2px solid red; */
+	font-family: Impact;
+	font-size: 20px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+	min-width: 900px;
+	width: 100%;
+}
+.triangle {
+	border-right: 20px solid #4b4b4b;
+	margin-top: -40px;
+}
+.menu a {
+	color: white;
+	margin-left: 15px;
+	text-decoration: none;
+}
+.menu a:hover {
+	background: white;
+	color: #366bb9;
+	transition-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		меню на страницах админа	*/
+.doChoice a {
+	background: #296487;
+	/* border: 2px solid red; */
+	border-radius: 3px 15px 1px 15px;
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+	margin-top: 8px;
+	margin-bottom: 25px;
+	text-decoration: none;
+	padding: 0px 10px 0 10px;
+}
+
+.doChoice1 a {
+	background: #296487;
+	/* border: 2px solid red; */
+	border-radius: 3px 15px 1px 15px;
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+	margin-top: 6px;
+	margin-bottom: 25px;
+	text-decoration: none;
+	padding: 0px 10px 0 10px;
+}
+
+#menuForActionWithClasses {
+	margin: -15px 0 0 15px;
+}
+.doChoice a:hover,
+input[name="addTeacher"]:hover,
+.allTeachers a:hover,
+.allHolidays a:hover,
+.allSubjects a:hover,
+input[name="editTeacher"]:hover,
+input[name="doDelete"]:hover,
+input[name="cancel"]:hover,
+input[name="addClass"]:hover,
+input[name="exit"]:hover,
+input[name="addPupil"]:hover,
+input[name="editClass"]:hover,
+input[name="editPupil"]:hover,
+input[name="chooseScheduleByClass"]:hover,
+input[name="beginAndEndOfQuarter"]:hover,
+input[name="updateSchedule"]:hover,
+input[name="addSubject"]:hover,
+input[name="editSubject"]:hover,
+input[name="editHoliday"]:hover,
+input[name="chooseClass"]:hover,
+.chooseSubjAndClass:hover,
+.allClasses a:hover {
+	background: #0a0d52;
+	border-radius: 0;
+	color: #d9f2f1;
+	text-decoration: underline;
+	transition-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		формы на страницах админа		*/
+.main {
+	margin-top: -30px;
+	padding: 0 15px;
+}
+.maincal {
+	margin-top: -1px;
+	padding: 0 15px;
+}
+.addTeacher {
+	/* border: 2px solid red; */
+	margin-left: 35px;
+	width: 1150px;
+}
+.allFields,
+.chooseSubjects,
+.chooseClasses {
+	float: left;
+	width: 30%;
+	margin-right: 10%;
+}
+.allFields .chooseSubjects .chooseClasses :last-child {
+	margin-right: 0;
+}
+.chooseSubjects {
+	margin-left: -75px;
+	width: 158px;
+	float: left;
+}
+.chooseClasses {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 1;
+	width: 290px;
+}
+.standartInput {
+	height: 25px;
+	margin-top: 0px;
+	width: 340px;
+}
+input[name="addTeacher"] {
+	background: #1b4864;
+	border: none;
+	border-radius: 15px;
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+	height: 30px;
+	position: absolute; left: 113px; top: 427px;
+	width: 160px;
+}
+
+input[name="editTeacher"] {
+	background: #1b4864;
+	border: none;
+	border-radius: 15px;
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+	height: 30px;
+	position: absolute; left: 389px; top: 639px;
+	width: 160px;
+}
+
+
+
+input[name="doDelete"],
+input[name="cancel"],
+input[name="addClass"],
+input[name="exit"],
+input[name="addPupil"],
+input[name="chooseClass"],
+input[name="editPupil"],
+input[name="chooseScheduleByClass"],
+input[name="beginAndEndOfQuarter"],
+input[name="updateSchedule"],
+input[name="addSubject"],
+input[name="editHoliday"],
+input[name="editSubject"],
+.chooseSubjAndClass,
+input[name="editClass"] {
+	background: #1b4864;
+	border: none;
+	border-radius: 15px;
+	color: white;
+	font-family: Verdana;
+	font-weight: bold;
+	height: 30px;
+	width: 160px;
+}
+#editTeacher {
+	position: absolute; top: 735px; left: 206px;
+}
+#doChoiceOnAddPupilPage {
+	position: absolute; top: 580px; left: 50px;
+	margin: 10px 0 0 -15px;
+}
+#dooChoiceOnAddPupilPage {
+	position: absolute; top: 462px; left: 50px;
+	margin: 10px 0 0 -15px;
+}
+#editTeach {
+	margin-bottom: 25px;
+}
+.allTeachers td,
+.allHolidays td {
+	padding: 5px;
+}
+.allTeachers a,
+.allClasses a,
+.allSubjects a,
+.allHolidays a,
+.allGr a{
+	background: #212e48;
+	border-radius: 15px;
+	color: white;
+	display: block;
+	height: 20px;
+	padding: 0 5px;
+	text-decoration: none;
+	width: auto;
+}
+#pagination {
+	margin: 15px 0;
+}
+#confirmDelete {
+	margin-left: 10px;
+}
+
+.allFieldsForPupil,
+.chooseClassForPupil{
+	float: left;
+	width: 38%;
+	margin-right: 2%;
+}
+
+.allFieldsForPupil .chooseClassForPupil :last-child {
+	margin-right: 0;
+}
+
+.chooseClassForPupil {
+	column-count: 1;
+	margin-left: 30px;
+	width: 400px;
+}
+#addPupil {
+	margin-left: 0px;
+	width: 132px;
+	position: absolute;
+    top: 527px;
+    left: 48px
+}
+.standartTextArea,
+#fotoForAddPupil,
+#deletePupil,
+#maifOfSchedulePage,
+#addSubject,
+#editDateOfHolidays {
+	margin-top: 10px;
+}
+.allClasses th, 
+.allSubjects td, 
+.allClasses td {
+	padding: 3px;
+}
+#backOnEditClasses {
+	margin-top: 10px;
+}
+#processEditOrDeleteClasses {
+	margin-top: 15px;
+}
+#chooseClassForFindPupil {
+	width: 400px;
+}
+#editPupilsPage {
+	margin-top: -42px;
+}
+#editPupils {
+	margin: 25px 0 30px 15px;
+}
+
+
+#processEditOrDeletePupil,
+#editSubject,
+#editTeachers,
+#processEditOrDelete,
+#deleteClass,
+#processDeleteSubject {
+	margin-top: 0px;
+}
+#doChoiceOnProcessEditOrDeletePupil {
+	position: absolute; top: 800px; left: 30px;
+}
+#addSubject,
+#editSubjects,
+#addClass {
+	margin-left: -10px;
+}
+#addTeacher {
+	margin-top: 65px;
+}
+#addTeache {
+	margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		расписание		*/
+#editPupil {
+	position: absolute; top: 760px; left: 45px;
+}
+#chooseClass {
+	height: 30px;
+	width: 150px;
+}
+#enterQuartersAndHolidays {
+	margin: 40px 0 0 -10px;
+}
+#editDate {
+	margin: 25px 0 0 -10px;
+}
+#beginAndEndOfQuarter {
+	margin-top: 20px;
+}
+.allHolidays {
+	margin-left: 15px;
+}
+.weekUp,
+.weekDown {
+	display: inline-block;
+}
+input[name="updateSchedule"] {
+	border: 2px solid #8f1f1d;
+	border-radius: 0;
+	font-size: 11px;
+	height: 20px;
+	padding: 2px;
+	width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		страница учителя	*/
+.welcome {
+	margin-left: 10px;
+}
+.line {
+	background-color: #8f1f1d;
+	border: none;
+	color: #8f1f1d;
+	height: 2px;
+}
+.goToSelectQuarters li a {
+	background: #8f1f1d;
+	border-right: 2px solid #d4c8b1;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 3px;
+}
+.monthDown,
+.monthUp {
+	background: #8f1f1d;
+	border: none;
+	/* border: 2px solid #d4c8b1; */
+	border-right: 2px solid #d4c8b1;
+	color: white;
+	cursor: pointer;
+	float: left;
+	font-weight: bold;
+	display: inline;
+	height: 18px;
+	position: absolute; top: 306px; left: 900px;
+	width: 120px;
+}
+.monthDown {
+	position: absolute; top: 306px; left: 780px;
+}
+.tableForClassRegister {
+	background: white;
+	margin-right: 10px;
+}
+.tableForClassRegister td {
+	text-align: center;
+}
+.tableForClassRegister a {
+	color: blue;
+	text-decoration: none;
+}
+.tableForClassRegister tr td:nth-child(2) {
+	/* border: 1px solid yellow; */
+	white-space: nowrap;
+}
+.tableForClassRegister tr td {
+	line-height: 25px;
+}
+.saveMark {
+	background: linear-gradient(#f5f5f5 0%, #e0e0e0 100%);
+	border: 1px solid black;
+	font-family: Arial;
+	height: 25px;
+	margin-top: 10px;
+	width: 75px;
+}
+.SM {
+	background: linear-gradient(#f5f5f5 0%, #e0e0e0 100%);
+	border: 1px solid black;
+	color: black;
+	display: inline;
+	font-family: Arial;
+	font-size: 12;
+	height: 25px;
+	line-height: 25px;
+	margin-top: 20px;
+	padding: 4px 8px;
+	text-align: center;
+	text-decoration: none;
+	/* width: 70px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*		дневник		*/
+.scheduleInDiary {
+	background: white;
+	/* border: 2px solid #8f1f1d; */
+	margin: 40px 0 20px 20px;
+	width:250px;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 1;
+}
+
+.fotoAndText div {
+	display: inline-block;
+}
+.foto {
+	float: left;
+	margin-left: 15px;
+}
+.text {
+	margin-left: 15px;
+}
+.diary {
+	background-color: #3d7375;
+	border: none;
+	color: #8f1f1d;
+	height: 2px;
+	margin-top: 90px;
+}
+.isTask {
+	position: relative;
+	margin-left:5px; top: 3px;
+}
+.scheduleForDiary td a {
+	color: red;
+	font-weight: bold;
+	text-decoration: none;
+}
+.schoolDiaryWeekDown,
+.schoolDiaryWeekUp {
+	background: #8f1f1d;
+	border: none;
+	/* border: 2px solid #d4c8b1; */
+	border-right: 2px solid #d4c8b1;
+	color: white;
+	cursor: pointer;
+	float: left;
+	font-weight: bold;
+	display: inline;
+	height: 18px;
+	position: absolute; top: 265px; left: 700px;
+	width: 120px;
+}
+.schoolDiaryWeekUp {
+	position: absolute; top: 265px; left: 820px;
+}
+.scheduleForDiary tr td:nth-child(1),
+.scheduleForDiary tr td:nth-child(3),
+.markInDiary {
+	/* border: 1px solid yellow; */
+	text-align: center;
+}
+.centerOfDiary {
+	/* border: 1px solid yellow; */
+	height: 601px;
+	position: absolute; top: 292px; left: 465px;
+	width: 39px;
+}
+.SMinDiary {
+	margin-left: 100px;
+}
+.schedule tr td:nth-child(1) {
+	/* border: 1px solid yellow; */
+	height: 18px;
+	margin:0;
+	width: 20px;
+	padding:0;
+	/* white-space: nowrap; */
+}
+.schedule tr td:nth-child(2) {
+	/* border: 1px solid yellow; */
+	height: 21px;
+	margin:0;
+	width: 330px;
+	padding:0;
+	/* white-space: nowrap; */
+}
+.schedule tr td:nth-child(3) {
+	/* border: 1px solid yellow; */
+	height: 21px;
+	margin:0;
+	width: 160px;
+	padding:0;
+	/* white-space: nowrap; */
+}
+.schedule tr td:nth-child(4) {
+	/* border: 1px solid yellow; */
+	height: 21px;
+	margin:0;
+	width: 30px;
+	padding:0;
+	/* white-space: nowrap; */
+}
+
+
+#notRightsEnought {
+	margin-top: 30px;
+}
+
+
+.number_of_lesson {
+	width: 12px;
+}
+.selrasp {
+	width: 70px;
+}
+
+
+
+
+
+
+.allFields input:focus { /* add this to the already existing style */
+	background: rgba(225, 225, 225, 0.933); /* Цвет фона */
+}
+.allFields input{
+	padding-right:30px;
+}
+input:required{
+	background: #fff url(../img.png) no-repeat 98% center;
+}
+.allFields input:focus:invalid { /* when a field is considered invalid by the browser */
+	background: #fff url(../img.png) no-repeat 98% center;
+	box-shadow: 0 0 6px #d45252;
+	border-color: #b03535;
+	border: 1px solid red;
+}
+.allFields input:required:valid { /* when a field is considered valid by the browser */
+	background: #fff url(../img1.png) no-repeat 98% center;
+	box-shadow: 0 0 6px #5cd053;
+	border-color: #28921f;
+}
+	
+
+
+
+
+
+
+
+
+
+
+
