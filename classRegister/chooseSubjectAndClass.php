@@ -1,5 +1,5 @@
 <?php
-    require_once '..\config\connect.php';
+  require_once '../../config/connect.php';
     $grup=mysqli_query($connect,'SELECT * from `grup`');
     $grup = mysqli_fetch_all($grup);
     $post=mysqli_query($connect,'SELECT `id_post` from `post`');

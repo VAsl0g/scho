@@ -9,16 +9,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Добавить ученика</title>
-	<link rel="stylesheet" type="text/css" href="\css\style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 </head>
 	<body>
 		<div class="menu">
-            <a href="..\teachers/doActionWithTeachers.php">Учителя</a>
+            <a href="../teachers/doActionWithTeachers.php">Учителя</a>
 		    <a href="doActionWithClasses.php">Ученики</a>
-			<a href="..\group/doActionWithGr.php">Группы</a>
-		    <a href="..\subjects/doActionWithSubjects.php">Дисциплины</a>
-		    <a href="..\schedule/var.php">Расписание</a>
-		    <a href="\logout.php">Выйти</a>
+			<a href="../group/doActionWithGr.php">Группы</a>
+		    <a href="../subjects/doActionWithSubjects.php">Дисциплины</a>
+		    <a href="../schedule/var.php">Расписание</a>
+		    <a href="/logout.php">Выйти</a>
 		    <div class="triangle"></div>
         </div> </br></br>
 	

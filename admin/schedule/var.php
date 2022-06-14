@@ -11,7 +11,7 @@
   for ($i=1; $i<7; $i++){
   		${'post'.$i} = &$post;
   } */ 
-    require_once '..\..\config\connect.php';
+    require_once '../../config/connect.php';
     $raspis=mysqli_query($connect,'SELECT * from `raspis`');
     $raspis = mysqli_fetch_all($raspis);
     $grup=mysqli_query($connect,'SELECT * from `grup`');
@@ -28,7 +28,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Работа с расписанием</title>
-	<link rel="stylesheet" type="text/css" href="\css\style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<style type='text/css'>
 	</style>
@@ -36,11 +36,11 @@
 
 <body style = "background: #c9dbdc">
 	<div class="menu">
-		<a href="..\teachers/doActionWithTeachers.php">Учителя</a>
-		<a href="..\classes/doActionWithClasses.php">Ученики</a>
-		<a href="..\subjects/doActionWithSubjects.php">Дисциплины</a>
+		<a href="../teachers/doActionWithTeachers.php">Учителя</a>
+		<a href="../classes/doActionWithClasses.php">Ученики</a>
+		<a href="../subjects/doActionWithSubjects.php">Дисциплины</a>
 		<a href="var.php" style = "background: #5F9EA0">Расписание</a>
-		<a href="\logout.php">Выйти</a>
+		<a href="/logout.php">Выйти</a>
 		<div class="triangle"></div>
 	</div> <br />
 

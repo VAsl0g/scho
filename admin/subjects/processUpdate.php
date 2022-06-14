@@ -1,5 +1,5 @@
 <?php
-  require_once '..\..\config\connect.php';
+  require_once '../../config/connect.php';
   $post_id = $_GET['id'];
   $posts = mysqli_query($connect, "SELECT * FROM `post` WHERE `id_post`='$post_id' ");							
   $posts = mysqli_fetch_assoc( $posts);

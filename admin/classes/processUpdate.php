@@ -1,5 +1,5 @@
 <?php
-  require_once '..\..\config\connect.php';
+  require_once '../../config/connect.php';
   $pupil_id = $_GET['id'];
   $pupil = mysqli_query($connect, "SELECT * FROM `students` WHERE `id_stud`='$pupil_id' ");							
   $pupil = mysqli_fetch_assoc($pupil);
