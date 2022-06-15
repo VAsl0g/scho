@@ -44,12 +44,12 @@
 		exit();
 	} */
 
-/*  	setcookie('userq', $user['login'], time() + 3600, "/"); 
+/* 	setcookie('userq', $user1['login'], time() + 3600, "/"); 
 
 	if(isset($_COOKIE['userq'])){
 		echo 'Куки успешно установлены!';
 	  }else{
 		echo 'Куки НЕ установлены!';
-	  } 
-	  header('Location: /'); */
+	  }  */
+/* 	  header('Location: /'); */ 
 ?>

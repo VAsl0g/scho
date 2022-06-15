@@ -1,5 +1,5 @@
 <?php
-require_once '..\config\connect.php';
+require_once '../config/connect.php';
 $name = $_COOKIE['userq3'];
 $students = mysqli_query($connect, "SELECT * from `students` WHERE `login`= '$name'");
 $students = mysqli_fetch_assoc($students);
@@ -28,7 +28,7 @@ $gr=$students['id_grup'] ;
     <main>
         <div class="fotoAndText">
             <div class="foto">
-                <img src="\profile.png" height='170' width='170'> <br />
+                <img src="/profile.png" height='170' width='170'> <br />
             </div>
             <div class="text">
                 <b>Номер группы: <ins><?= $students['id_grup'] ?> </ins><br />

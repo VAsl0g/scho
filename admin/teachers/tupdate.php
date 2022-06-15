@@ -10,11 +10,18 @@ $exp = $_POST['exp'];
 $date = $_POST['date'];
 $id_post=$_POST['id_post'];
 $login = $_POST['login'];
-$password = md5($_POST['password']); 
 
-
-mysqli_query($connect, "UPDATE `person` SET `middleName` = '$middleName', `firstName` = '$firstName', `lastName` = '$lastName', 
- `phone` = '$telephon',`experience` = '$exp',`date_of_birth` = '$date', `login`='$login', `password` = '$password' WHERE `person`.`id` = '$id'");
-
+if($_POST['password'] == ''):
+    $password = mysqli_query($connect, "SELECT `password` FROM `person` WHERE `person`.`id` = '$id'");
+    $password = mysqli_fetch_assoc($password);
+    $password = $password['password'];
+    mysqli_query($connect, "UPDATE `person` SET `middleName` = '$middleName', `firstName` = '$firstName', `lastName` = '$lastName', 
+ `phone` = '$telephon',`experience` = '$exp',`date_of_birth` = '$date', `login`='$login',`password`='$password' WHERE `person`.`id` = '$id'");
+endif;
+if($_POST['password'] != ''):
+    $password = md5($_POST['password']); 
+    mysqli_query($connect, "UPDATE `person` SET `middleName` = '$middleName', `firstName` = '$firstName', `lastName` = '$lastName', 
+    `phone` = '$telephon',`experience` = '$exp',`date_of_birth` = '$date', `login`='$login', `password` = '$password' WHERE `person`.`id` = '$id'");
+endif;
 
 header('Location: /admin/teachers/successUpdate.php'); 

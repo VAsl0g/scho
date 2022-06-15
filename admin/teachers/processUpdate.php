@@ -57,7 +57,7 @@
 				</div>
 				<div>
           <p>Пароль</p>
-					<input class="standartInput" type="text" name="password" value="<?= $teacher['password'] ?>">
+					<input class="standartInput" type="text" name="password" value="">
 					<span style="color: red";></span>
 				</div> <br />
 			<input class="standartButton" id="editTeacher" type="submit" name="editTeacher" value="Обновить">

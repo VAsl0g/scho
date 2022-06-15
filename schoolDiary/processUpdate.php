@@ -1,5 +1,5 @@
 <?php
-  require_once '..\config\connect.php';
+  require_once '../config/connect.php';
   $students_id = $_GET['id'];
   $student = mysqli_query($connect, "SELECT * FROM `students` WHERE `id_stud`='$students_id' ");							
   $student = mysqli_fetch_assoc($student);
@@ -52,12 +52,7 @@
 				</div>
 				<div>
           <p>Пароль</p>
-					<input class="standartInput" type="text" name="password" value="<?= $student['password'] ?>">
-					<span style="color: red";></span>
-				</div> <br />
-                <div>
-          <p>Номер группы</p>
-					<input class="standartInput" type="text" name="id_grup" value="<?= $student['id_grup'] ?>">
+					<input class="standartInput" type="text" name="password" value="">
 					<span style="color: red";></span>
 				</div> <br />
                 <div>

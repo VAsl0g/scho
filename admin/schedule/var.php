@@ -1,5 +1,5 @@
 <?php
-/*   require_once '..\..\config\connect.php';
+/*   require_once '../../config/connect.php';
   $person=mysqli_query($connect,'SELECT `id_person`,`middleName` from `person`');
   $post=mysqli_query($connect,'SELECT `id_post`,`name_post` from `post`');
 /*   $post1=mysqli_query($connect,'SELECT `id_post`,`name_post` from `post`');

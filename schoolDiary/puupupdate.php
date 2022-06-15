@@ -8,12 +8,22 @@ $lastName = $_POST['lastName'];
 $telephon = $_POST['telephon'];
 $date = $_POST['date'];
 $login = $_POST['login'];
-$password = md5($_POST['password']); 
-$id_grup = $_POST['id_grup'];
 $roditinfo = $_POST['roditinfo'];
 
-mysqli_query($connect, "UPDATE `students` SET `middleName` = '$middleName', `firstName` = '$firstName', `lastName` = '$lastName', 
- `phone` = '$telephon',`date_of_birth` = '$date', `login`='$login', `password` = '$password', `id_grup`='$id_grup', `roditinfo` = '$roditinfo'  WHERE `students`.`id_stud` = '$id'");
+if($_POST['password'] == ''):
+    $password = mysqli_query($connect, "SELECT `password` FROM `students` WHERE `students`.`id_stud` = '$id'");
+    $password = mysqli_fetch_assoc($password);
+    $password = $password['password'];
+    mysqli_query($connect, "UPDATE `students` SET `middleName` = '$middleName', `firstName` = '$firstName', `lastName` = '$lastName', 
+    `phone` = '$telephon',`date_of_birth` = '$date', `login`='$login', `roditinfo` = '$roditinfo'  WHERE `students`.`id_stud` = '$id'");
+endif;
+if($_POST['password'] != ''):
+    $password = md5($_POST['password']); 
+    mysqli_query($connect, "UPDATE `students` SET `middleName` = '$middleName', `firstName` = '$firstName', `lastName` = '$lastName', 
+    `phone` = '$telephon',`date_of_birth` = '$date', `login`='$login', `password` = '$password', `roditinfo` = '$roditinfo'  WHERE `students`.`id_stud` = '$id'");
+endif;
+
+
 
 
 header('Location: /schoolDiary/schoolDiary.php'); 

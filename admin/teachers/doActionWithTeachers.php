@@ -7,13 +7,13 @@
 </head>
 <body>
 	<div class="menu">
-		<a href="doActionWithTeachers.php" style = "background: #5F9EA0">Учителя</a>
-		<a href="../classes/doActionWithClasses.php" >Ученики</a>
-		<a href="../group/doActionWithGr.php">Группы</a>
-		<a href="../subjects/doActionWithSubjects.php">Дисциплины</a>
-		<a href="../schedule/var.php">Расписание</a>
-		<a href="/php/exit.php">Выйти</a>
-		<div class="triangle"></div>
+	<a href="doActionWithTeachers.php" style = "background: #5F9EA0">Учителя</a>
+			<a href="../classes/doActionWithClasses.php">Ученики</a>
+			<a href="../group/doActionWithGr.php">Группы</a>
+			<a href="../subjects/doActionWithSubjects.php">Дисциплины</a>
+			<a href="../schedule/var.php">Расписание</a>
+			<a href="/php/exit.php">Выйти</a>
+			<div class="triangle"></div>
 	</div> </br></br>
 	
 	<main>

@@ -53,7 +53,7 @@
 				</div>
 				<div>
           <p>Пароль</p>
-					<input class="standartInput" type="text" name="password" value="<?= $pupil['password'] ?>">
+					<input class="standartInput" type="text" name="password" value="">
 					<span style="color: red";></span>
 				</div>
 				<div>
